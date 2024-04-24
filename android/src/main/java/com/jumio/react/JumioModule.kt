@@ -135,7 +135,6 @@ class JumioModule(context: ReactApplicationContext) : JumioBaseModule(context) {
             eventResultMap.apply {
                 country?.let { putString("selectedCountry", it) }
                 idType?.let { putString("selectedDocumentType", it) }
-                idSubType?.let { putString("selectedDocumentSubType", it) }
                 documentNumber?.let { putString("idNumber", it) }
                 personalNumber?.let { putString("personalNumber", it) }
                 issuingDate?.let { putString("issuingDate", it) }
